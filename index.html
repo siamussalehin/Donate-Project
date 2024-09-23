@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate BD</title>
+  <!-- daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: lexend;
+    }
+  </style>
+</head>
+
+<body class="font-lexend">
+  <!-- Navbar Section -->
+  <section class="bg-[#F9F7F3] md:h-40 ">
+    <div class="navbar md:w-9/12 mx-auto py-10 space-y-5">
+      <div class="navbar-start ">
+       
+        <a class="btn bg-lime-300 text-xl font-semibold px-10">Blog</a>
+      </div>
+      <div class="navbar-center lg:flex">
+        <img class="mr-5 h-8" src="./assets/logo.png" alt="">
+        <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+      </div>
+      <div class="navbar-end gap-3">
+        <img class="" src="./assets/coin.png" alt="">
+        <p class="text-2xl font-bold text-gray-500">5500 </p>
+        <p class="text-2xl font-bold text-gray-500">BDT</p>
+      </div>
+    </div>
+  </section>
+  <main class="md:w-8/12 mx-auto my-20">
+    <!-- Button Section -->
+    <div class="flex item-center justify-center gap-5">
+      <button id="show-donate-section" class="btn hover:bg-lime-300 text-xl font-semibold px-10  border-solid border-2">Donation</button>
+      <button id="show-history-section" class="btn hover:bg-lime-300 text-xl font-semibold px-10  border-solid border-2">History</button>
+    </div>
+    <!-- Donate Section -->
+     <!-- Section 1 -->
+    <section id="donate-section">
+      <div class="grid md:grid-cols-2 p-5 border-solid border-2 my-5 rounded-lg">
+        <div>
+          <img src="./assets/noakhali.png" alt="">
+        </div>
+        <div class="">
+          <div class="flex gap-1 item-center text-center bg-[#1111110D] p-2 rounded-lg w-24">
+            <img class="h-5" src="./assets/coin.png" alt="">
+            <p id="balance" class="font-bold text-gray-500 ">0</p>
+            <p class="font-bold text-gray-500 ">BDT</p>
+          </div>
+          <h2 class="text-3xl font-bold my-3">Donate for Flood at Noakhali, Bangladesh</h2>
+          <p class=" text-gray-500 text-xl"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+          <input id="input-donate" class="w-full p-3 border-solid border-2 rounded-lg my-3" type="text" placeholder="Write Donation Amount">
+          <button id="btn-donate-money" onclick="my_modal_1.showModal()" class="btn w-full bg-lime-400 text-xl font-semibold px-10 border-solid border-2">Donate Now</button>
+          <dialog id="my_modal_1" class="modal">
+            <div class="modal-box flex flex-col item-center justify-center text-center ">
+              <h3 class="text-3xl text-center font-bold">Congrates!</h3>
+              <img class="w-10 h-10" src="./assets/coin.png" alt="">
+              <p class="py-4 text-xl">You Have Donated For Humankind</p>
+              <h2 class="text-2xl font-bold">Successfully</h2>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close Confirmation</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </section>
+
+    <!-- History -->
+     <section>
+      <div id="history-section" class="hidden">
+        <h1>I am histoy</h1>
+      </div>
+     </section>
+  </main>
+  <script src="js/donateMoney.js"></script>
+  <script src="js/feature.js"></script>
+  <script src="js/utilities.js"></script>
+  
+</body>
+
+</html>
