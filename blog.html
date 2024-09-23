@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate BD</title>
+    <!-- daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: lexend;
+        }
+    </style>
+</head>
+
+<body class="font-lexend">
+    <!-- Navbar Section -->
+    <section class="sticky top-0 bg-[#F9F7F3] md:h-40 ">
+        <div class="navbar md:w-9/12 mx-auto py-10 space-y-5">
+            <div class="navbar-start ">
+
+                <a href="index.html" class="btn bg-lime-300 text-xl font-semibold px-10">Home</a>
+            </div>
+            <div class="navbar-center lg:flex">
+                <img class="mr-5 h-8" src="./assets/logo.png" alt="">
+                <h1 class="text-2xl font-bold">Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end gap-3">
+                <img class="" src="./assets/coin.png" alt="">
+                <p id="account-balance" class="text-2xl font-bold ">5500 </p>
+                <p class="text-2xl font-bold ">BDT</p>
+            </div>
+        </div>
+    </section>
+    <!-- question section -->
+     <section class="w-10/12 mx-auto">
+        <h1 class="text-3xl font-bold my-10">Important FAQ</h1>
+        <i class="fa-regular fa-circle-question"></i>
+        <div class="space-y-3 border-solid border-2 p-10 rounded-lg">
+            <div class="collapse collapse-arrow bg-base-200 border-solid border-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                  <p>The Document Object Model (DOM) is a programming interface for web documents that represents the structure of a webpage as a tree of objects. It allows developers to manipulate HTML and XML elements dynamically using languages like JavaScript, enabling interactive features and changes to the document's content and structure.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 border-solid border-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">How do you select the element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>You can select elements from the DOM using methods like getElementById for single elements, getElementsByClassName or getElementsByTagName for multiple elements, and querySelector or querySelectorAll for more complex CSS-style selections. These methods allow you to access and manipulate elements easily.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 border-solid border-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">How do you manipulate an element's attrubutes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p>To manipulate an element's attributes using the DOM, you can use methods like setAttribute() to set or update attributes and getAttribute() to retrieve them. For styles, you can directly modify the element's style property to apply inline CSS changes.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-200 border-solid border-2">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">What is event delegation in the context of the DOM, and why is it useful?</div>
+                <div class="collapse-content">
+                  <p>Event delegation in the DOM is a technique where a single event listener is added to a parent element to handle events on its child elements. It's useful because it improves performance by reducing the number of event listeners and allows dynamic handling of elements added later.</p>
+                </div>
+              </div>
+              
+              
+        </div>
+     </section>
+</body>
+</html>
