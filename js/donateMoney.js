@@ -4,11 +4,14 @@ document.getElementById('btn-donate-money').addEventListener('click', function()
     const donateMoney = getInputById('input-donate');
     
 
-    if(donateMoney !== "number"){
+    if(donateMoney > 0){
         const balance = getTextById('balance');
         const newBalance = balance + donateMoney;
         document.getElementById('balance').innerText = newBalance;
-        console.log(balance)
+        const accountBalance = document.getElementById('account-balance').innerText;
+        const newAccountBalance = accountBalance - donateMoney;
+        document.getElementById('account-balance').innerText = newAccountBalance;
+        
        
     }
     else{
