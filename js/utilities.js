@@ -15,10 +15,13 @@ function getTextById(id){
 function showSectionById(id){
     document.getElementById('donate-section').classList.add('hidden');
     document.getElementById('history-section').classList.add('hidden');
+   
     //Show the Section//
     document.getElementById(id).classList.remove('hidden');
+   
 }
 
-function calledDonateBtn(id1, id2){
-    
-}
+
+
+
+
